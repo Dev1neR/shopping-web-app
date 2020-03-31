@@ -10,6 +10,7 @@ import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 	AngularFireModule.initializeApp(environment.firebaseConfig, 'shopping-web-app'),
 	AngularFirestoreModule, // Only required for database features
 	AngularFireAuthModule, // Only required for auth features,
-	AngularFireStorageModule // Only required for storage features
+	AngularFireStorageModule, BrowserAnimationsModule // Only required for storage features
   ],
   providers: [],
   bootstrap: [AppComponent]
